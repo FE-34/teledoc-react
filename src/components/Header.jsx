@@ -1,7 +1,8 @@
+import MaleDoctor from '../assets/Male-Doctor.svg'
 
-function Header({MaleDoctor, link}) {
+function Header({link}) {
   return (
-    <header>
+    <header className="homepage-header">
         <div id="header-left">
             <div>
                 <img src={MaleDoctor} alt="Male Doctor" />

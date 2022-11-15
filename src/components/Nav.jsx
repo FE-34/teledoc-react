@@ -1,5 +1,6 @@
+import TeleDocLogo from '../assets/TeleDoc-logo.svg'
 
-function Nav({TeleDocLogo}) {
+function Nav() {
   return (
     <>
         <nav>

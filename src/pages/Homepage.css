@@ -1,5 +1,5 @@
 /* Header */
-header{
+.homepage-header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,15 +10,13 @@ header{
     background-position: -10px 50px;
     margin-top: 120px;
 }
-header>div{
-    width: 45%;
-}
 header img{
     width: inherit;
     height: 70vh;
 }
 #header-left, #header-right{
     display: flex;
+    width: 45%;
 }
 #header-left{
     justify-content: center;

@@ -1,5 +1,6 @@
+import MaleFemaleDoctor from '../assets/Group-86.svg'
 
-function AboutUs({MaleFemaleDoctor}) {
+function AboutUs() {
   return (
     <main id="about-us">
         <div id="about-us-left">
