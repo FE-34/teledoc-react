@@ -5,3 +5,9 @@
     list-style: none;
     font-family: 'Inter', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
