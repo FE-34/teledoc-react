@@ -10,6 +10,8 @@ function FormRegister() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const validasiHuruf = /^[a-zA-Z ]+$/;
+  const register = useSelector(state => state.register)
+  console.log(register);
 
   function handleRegister(e){
     e.preventDefault()
@@ -18,10 +20,15 @@ function FormRegister() {
         if (password.length >= 6){
             if (password == confirmPassword){
                 const newDataUser = {
-                    namadepan: namaDepan,
-                    namabelakang: namaBelakang,
+                    namaDepan: namaDepan,
+                    namaBelakang: namaBelakang,
                     email: email,
-                    password: password
+                    password: password,
+                    telepon: '',
+                    jk: '',
+                    tempatLahir: '',
+                    tanggalLahir: '',
+                    alamat: ''
                 }
                 
                 alert("Terima kasih sudah mendaftar, silahkan login")

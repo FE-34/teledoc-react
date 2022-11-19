@@ -2,10 +2,15 @@ import { USER_REGISTER } from "../action/registerAction"
 
 const initialState = [
     {
-        namadepan: 'John',
-        namabelakang: 'Cena',
+        namaDepan: 'John',
+        namaBelakang: 'Cena',
         email: 'johncena@gmail.com',
-        password: 'thechampishere'
+        password: 'thechampishere',
+        telepon: '',
+        jk: '',
+        tempatLahir: '',
+        tanggalLahir: '',
+        alamat: ''
     }
 ]
 
