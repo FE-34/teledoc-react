@@ -104,7 +104,7 @@ function FormRegister() {
                         </div>
                         <button type="submit">Register</button>
                     </form>
-                    <p>Sudah Punya Akun ? <Link><span>Login</span></Link> Di Sini</p>
+                    <p>Sudah Punya Akun ? <Link to={'/login'}><span name='login'>Login</span></Link> Di Sini</p>
                 </div>
             </div>
         </main>

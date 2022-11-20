@@ -1,9 +1,19 @@
 import { Icon } from 'react-icons-kit'
 import {user} from 'react-icons-kit/feather/user'
 import {ic_logout} from 'react-icons-kit/md/ic_logout'
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { loggeduser } from '../redux/action/loginmasukAction'
 
 function ProfilMenu({style1}) {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  function handleLogout(){
+    navigate('/')
+    dispatch(loggeduser())
+  }
+
   return (
     <div className="col-md-4 bg-white">
         <div className='profil-left'>
@@ -19,14 +29,12 @@ function ProfilMenu({style1}) {
                         <div className='bg-black bg-opacity-10 horizontal-rule'></div>
                     </div>
                 </li>
-                <Link to={'/'}>
-                    <li className='my-4 border border-0 profil-menu'>
-                        <div className="row align-items-center">
-                            <div className='col-1 w-auto'><Icon className='profil-icon' icon={ic_logout} size={'100%'} /></div>
-                            <div className='col loh'><span className='profil-menu-title'>Keluar</span></div>  
-                        </div>
-                    </li>
-                </Link>
+                <li onClick={handleLogout} className='my-4 border border-0 profil-menu'>
+                    <div className="row align-items-center">
+                        <div className='col-1 w-auto'><Icon className='profil-icon' icon={ic_logout} size={'100%'} /></div>
+                        <div className='col loh'><span className='profil-menu-title'>Keluar</span></div>  
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

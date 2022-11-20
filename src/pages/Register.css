@@ -1,4 +1,4 @@
-span[name='tele']{
+span[name='tele'], span[name='login']{
     color: #6599E8;
 }
 span[name='doc']{

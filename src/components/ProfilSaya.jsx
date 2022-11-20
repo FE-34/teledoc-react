@@ -4,8 +4,9 @@ import { editProfil } from "../redux/action/registerAction";
 
 function ProfilSaya() {
   const dispatch = useDispatch()
+  const dataLogin = useSelector(state => state.login)
   const dataUser = useSelector(state => state.register)
-  const dataUserLogin = dataUser.filter((item) => item.email == 'rizky@upi.edu')
+  const dataUserLogin = dataUser.filter((item) => item.email == dataLogin[0].email)
   const [namaDepan, setNamaDepan] = useState('')
   const [namaBelakang, setNamaBelakang] = useState('')
   const [telepon,setTelepon]= useState('')
@@ -19,7 +20,12 @@ function ProfilSaya() {
     dataUserLogin.map((item) => {
         setNamaDepan(item.namaDepan)
         setNamaBelakang(item.namaBelakang)
+        setTelepon(item.telepon)
+        setJenisKelamin(item.jk)
+        setTempatLahir(item.tempatLahir)
+        setTanggalLahir(item.tanggalLahir)
         setEmail(item.email)
+        setAlamat(item.alamat)
     })
   }, [])
 
