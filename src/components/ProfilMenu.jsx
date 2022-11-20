@@ -4,6 +4,7 @@ import {ic_logout} from 'react-icons-kit/md/ic_logout'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { loggeduser } from '../redux/action/loginmasukAction'
+import React from 'react'
 
 function ProfilMenu({style1}) {
   const dispatch = useDispatch()

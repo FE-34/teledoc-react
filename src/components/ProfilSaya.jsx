@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { editProfil } from "../redux/action/registerAction";
+import React from 'react'
 
 function ProfilSaya() {
   const dispatch = useDispatch()

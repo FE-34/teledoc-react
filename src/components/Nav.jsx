@@ -4,6 +4,7 @@ import {bars} from 'react-icons-kit/fa/bars'
 import Icon from 'react-icons-kit'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import React from 'react'
 
 function Nav() {
   const dataLogin = useSelector(state => state.login)

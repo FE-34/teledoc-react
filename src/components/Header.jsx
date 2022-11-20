@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import MaleDoctor from '../assets/Male-Doctor.svg'
+import React from 'react'
 
 function Header({link}) {
   return (

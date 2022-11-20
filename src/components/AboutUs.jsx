@@ -1,4 +1,5 @@
 import MaleFemaleDoctor from '../assets/Group-86.svg'
+import React from 'react'
 
 function AboutUs() {
   return (

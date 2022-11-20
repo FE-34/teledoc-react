@@ -34,7 +34,6 @@ function Doktercard() {
       <p>Konsultasi online bersama dokter siaga</p>
 
       {output.map((item) => {
-            console.log(item.id)
             return <div key={item.id}>
               <div className='cardWrapper'>
                 <img src={item.image} alt='dokter' />

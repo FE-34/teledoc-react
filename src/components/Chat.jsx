@@ -5,7 +5,7 @@ import {smallRight} from 'react-icons-kit/entypo/smallRight'
 import {ellipsisH} from 'react-icons-kit/fa/ellipsisH'
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-
+import React from 'react'
 
 
 function Chat() {

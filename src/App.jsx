@@ -6,7 +6,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Profilpage from './pages/Profilpage'
 import Chatpage from './pages/Chatpage'
-
+import Listdokter from './pages/Listdokter'
+import React from 'react'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/profil' element={<Profilpage/>}/>
         <Route path='/chat/:id' element={<Chatpage/>}/>
+        <Route path={'/listdokter'} element={<Listdokter/>}/>
       </Routes>
     </div>
   )

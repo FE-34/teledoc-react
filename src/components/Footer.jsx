@@ -4,6 +4,7 @@ import {phone} from 'react-icons-kit/fa/phone'
 import {mail} from 'react-icons-kit/entypo/mail'
 import {instagram} from 'react-icons-kit/fa/instagram'
 import { useState } from 'react'
+import React from 'react'
 
 function Footer() {
     const [namaLengkap, setNamaLengkap] = useState('')
