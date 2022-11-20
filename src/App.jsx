@@ -8,11 +8,7 @@ import Profilpage from './pages/Profilpage'
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path='/' element={<Homepage/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/profil' element={<Profilpage/>}/>
-      </Routes>
+      
     </div>
   )
 }
