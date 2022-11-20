@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { addUser } from '../redux/action/registerAction'
 
 function FormRegister() {
@@ -11,6 +10,8 @@ function FormRegister() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const validasiHuruf = /^[a-zA-Z ]+$/;
+  const register = useSelector(state => state.register)
+  console.log(register);
 
   function handleRegister(e){
     e.preventDefault()
@@ -104,7 +105,7 @@ function FormRegister() {
                         </div>
                         <button type="submit">Register</button>
                     </form>
-                    <p>Sudah Punya Akun ? <Link><span>Login</span></Link> Di Sini</p>
+                    <p>Sudah Punya Akun ? <a href="login.html"><span>Login</span></a> Di Sini</p>
                 </div>
             </div>
         </main>

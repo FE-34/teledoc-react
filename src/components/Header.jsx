@@ -1,6 +1,9 @@
 import MaleDoctor from '../assets/Male-Doctor.svg'
+import { useSelector } from 'react-redux'
 
 function Header({link}) {
+    const acc = useSelector(state => state.login)
+    console.log(acc)
   return (
     <header className="homepage-header">
         <div id="header-left">

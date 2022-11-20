@@ -4,9 +4,7 @@ import { userLogged } from '../redux/action/loginAction'
 import { Link } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-
-
-
+import { loggeduser } from '../redux/action/loginmasukAction'
 
 function LoginForm() {
     const dispatch = useDispatch()
@@ -15,8 +13,11 @@ function LoginForm() {
     const [password, setPassword] = useState('')
 
     const registerAcc = useSelector(state => state.register)
+    const key_log = useSelector(state => state.login_key)
     const acc = useSelector(state => state.login)
+
     
+ 
     function handleLogin(e) {
         for (let i = 0; i <= registerAcc.length - 1; i++){
             
@@ -26,14 +27,11 @@ function LoginForm() {
                 if (true){
                     alert('Login Berhasil')
                     dispatch(userLogged(registerAcc[i]))
+                    dispatch(loggeduser(true))
                     console.log("Login berhasil") 
                     navigate('/')
-                    
                     break
 
-
-                    
-                    
                 }else{
                     console.log("Login berhasil")
                     alert('Login Berhasil')
