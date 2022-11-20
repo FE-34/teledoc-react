@@ -41,10 +41,10 @@ nav ul li a{
     font-size: 1rem;
     transition: .4s;
 }
-nav ul li a[href="login.html"]{ 
+nav ul li a[href="/login"]{ 
     padding: 12px 32px;
 }
-nav ul li a[href="login.html"], .row a[href="login.html"]{
+nav ul li a[href="/login"], .row a[href="/login"]{
     color: #fff;
     border-radius: 10px;
     font-weight: 800;
@@ -79,12 +79,88 @@ nav label i{
 div.row{
     width: 101%;
 }
-.row a[href="index.html"]{
+.row a[href="/"]{
     padding-right: 91%;
+    color: #000;
 }
 .row a[href="#about-us"]{
     padding-right: 85%;
 }
-.row a[href="login.html"]{
+.row a[href="/login"]{
     padding: 12px 38vw;
+}
+.nav-icon{
+    width: 32px;
+    height: 32px;
+}
+
+/* Hover */
+a[href="/"]:hover, a[href="#about-us"]:hover, a[href="/login"]:hover{
+    color: #6599E8;
+}
+a[href="/login"]:hover{
+    background-color: #65DBE8;
+}
+
+#check-1{
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1612px) {
+    #check-1:checked~.container{
+        display: none;
+    }
+}
+@media screen and (max-width: 926px) {
+    .right ul{
+        display: none;
+    }
+    .right div{
+        display: unset;
+    }
+    #check-1:checked~.container{
+        display: unset;
+    }
+}
+@media screen and (max-width: 768px){
+    .row a[href="#about-us"]{
+        padding-right: 83%;
+    }
+}
+@media screen and (max-width: 576px){
+    nav img{
+        width: 56px;
+        height: 70px;
+    }
+    nav span{
+        font-size: 1rem;
+    }
+    nav label i{
+        font-size: 1rem;
+    }
+    .nav-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .container img{
+        width: 50px;
+        height: 50px;
+    }
+    .row a[href="#about-us"]{
+        padding-right: 69%;
+    }
+    .row a[href="/login"]{
+        padding: 12px 32vw;
+    }
+}
+@media screen and (max-width: 375px){
+    .row a[href="#about-us"]{
+        padding-right: 64%;
+    }
+}
+@media screen and (max-width: 320px){
+    .row a[href="#about-us"]{
+        padding-right: 57%;
+    }
 }

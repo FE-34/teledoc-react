@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import MaleDoctor from '../assets/Male-Doctor.svg'
 
 function Header({link}) {
@@ -15,7 +16,7 @@ function Header({link}) {
                 <p name="recommendation">Lihat rekomendasi dokter dan mulai konsultasi sekarang</p>
             </div>
             <div>
-                <a href={link}>Lihat Dokter</a>
+                <Link to={link}>Lihat Dokter</Link>
             </div>
         </div>
     </header>

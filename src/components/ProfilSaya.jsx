@@ -43,7 +43,7 @@ function ProfilSaya() {
   }
 
   return (
-    <div className="col-8">
+    <div className="col-md-8">
         <div className='row justify-content-center'>
             <div className='col-10 bg-white content-wrapper my-5'>
                 <div className='row justify-content-center'>
@@ -52,62 +52,62 @@ function ProfilSaya() {
                     </div>
                     <div className='col-10'>
                         <form onSubmit={handleEditProfil}>
-                            <div className='list-input'>
-                                <div className='list-input-width'>
+                            <div className='list-input kym'>
+                                <div className='list-input-width inc'>
                                     <label className='input-label'>Nama Depan</label>
                                     <div className="input-wrapper" name="for-nama-depan">
                                         <input type="text" name="Nama Depan" className='input-form-1' value={namaDepan||""} onChange={(e) => setNamaDepan(e.target.value)} required />
                                     </div>
                                 </div>
-                                <div className='list-input-width'>
+                                <div className='list-input-width inc'>
                                     <label className='input-label'>Nama Belakang</label>
                                     <div className="input-wrapper" name="for-nama-belakang">
                                         <input type="text" name="Nama Belakang" className='input-form-1' value={namaBelakang||""} onChange={(e) => setNamaBelakang(e.target.value)} required />
                                     </div>
                                 </div>
                             </div>
-                            <div className='mt-3 list-input'>
-                                <div className='list-input-width'>
+                            <div className='list-input kym'>
+                                <div className='list-input-width inc'>
                                     <label className='input-label'>No. Telepon</label>
                                     <div className="input-wrapper" name="for-no-telepon">
                                         <input type="text" name="No Telepon" className='input-form-1' value={telepon} onChange={(e) => setTelepon(e.target.value)} />
                                     </div>
                                 </div>
-                                <div className='list-input-width'>
+                                <div className='list-input-width inc'>
                                     <label className='input-label'>Jenis Kelamin</label>
                                     <div className='input-radio'>
                                         <div className='input-radio-value'>
                                             <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" onClick={(e) => setJenisKelamin(e.target.value)} />
-                                            <label htmlFor="laki" className='ms-1'>Laki-laki</label>
+                                            <label htmlFor="laki" className='ms-1 jk'>Laki-laki</label>
                                         </div>
                                         <div className='ms-3 input-radio-value'>
                                             <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" onClick={(e) => setJenisKelamin(e.target.value)} />
-                                            <label htmlFor="perempuan" className='ms-1'>Perempuan</label>
+                                            <label htmlFor="perempuan" className='ms-1 jk'>Perempuan</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className='mt-3 list-input'>
+                            <div className='list-input kym inc'>
                                 <div className='list-input-width'>
                                     <label className='input-label'>Tempat Lahir</label>
                                     <div className="input-wrapper" name="for-tempat-lahir">
                                         <input type="text" name="Tempat Lahir" className='input-form-1' value={tempatLahir} onChange={(e) => setTempatLahir(e.target.value)} />
                                     </div>
                                 </div>
-                                <div className='list-input-width'>
+                                <div className='list-input-width inc'>
                                     <label className='input-label'>Tanggal Lahir</label>
                                     <div className="input-wrapper" name="for-tanggal-lahir">
                                         <input type="date" name="Tanggal Lahir" className='input-form-1' value={tanggalLahir} onChange={(e) => setTanggalLahir(e.target.value)} />
                                     </div>
                                 </div>
                             </div>
-                            <div className='mt-3'>
+                            <div className='kym inc'>
                                 <label className='input-label'>Alamat Email</label>
                                 <div className="input-wrapper" name="for-alamat-email">
                                     <input type="email" name="Alamat Email" className='input-form-2' value={email||""} onChange={(e) => setEmail(e.target.value)} readOnly required/>
                                 </div>
                             </div>
-                            <div className='mt-3'>
+                            <div className='kym inc'>
                                 <label className='input-label'>Alamat Rumah</label>
                                 <div className="input-wrapper" name="for-alamat-rumah">
                                     <textarea name="Alamat Rumah" rows={5} className='input-form-2' value={alamat} onChange={(e) => setAlamat(e.target.value)}></textarea>

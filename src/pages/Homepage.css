@@ -10,7 +10,7 @@
     background-position: -10px 50px;
     margin-top: 120px;
 }
-header img{
+.homepage-header img{
     width: inherit;
     height: 70vh;
 }
@@ -37,7 +37,7 @@ header img{
 #header-right p[name="recommendation"]{
     font-size: 1.25rem;
 }
-header div a{
+.homepage-header div a{
     text-decoration: none;
     background-color: #6599E8;
     color: #fff;
@@ -159,4 +159,180 @@ footer{
     margin: 32px 60px 0 60px;
     border-top: solid thin;
     letter-spacing: 0.03em;
+}
+
+/* Hover */
+.homepage-header div a:hover, #footer-no-2 form button:hover{
+    color: #6599E8;
+}
+.homepage-header div a:hover, #footer-no-2 form button:hover{
+    background-color: #65DBE8;
+}
+
+/* Responsive */
+@media screen and (max-width: 2560px) {
+    #about-us{
+        background-position: 1100px 300px;
+        background-size: 1517px 1036px;
+    }
+    #about-us img{
+        width: 800px;
+        height: 800px;
+    }
+}
+@media screen and (max-width: 1612px) {
+    #about-us{
+        background-size: 1017px 536px;
+        background-position: 500px 250px;
+    }
+    #about-us img{
+        width: 500px;
+        height: 500px;
+    }
+    #footer-no-2 form{
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 926px) {
+    #footer-no-1, #footer-no-2{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .homepage-header{
+        background-size: 50vw 100vh;
+        background-position: 0px 30px;
+    }
+    .homepage-header img{
+        height: 65vh;
+    }
+    #header-right h1{
+        font-size: 2rem;
+    }
+    #about-us{
+        background-position: 300px 250px;
+    }
+    #about-us p{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .homepage-header{
+        align-items: center;
+        flex-direction: column-reverse;
+        background-size: 0vw 0vh;
+        background-position: 0px 0px;
+    }
+    #header-left, #header-right{
+        width: 90%;
+    }
+    .homepage-header img{
+        height: 320px;
+    }
+    #header-right{
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .homepage-header{
+        background-size: 100vw 90vh;
+        background-position: -100px 240px;
+    }
+    .homepage-header img{
+        height: 280px;
+    }
+    #header-right h1{
+        font-size: 2.25rem;
+    }
+    #header-right p[name="find-doctor"]{
+        font-size: 0.75rem;
+    }
+    #header-right p[name="recommendation"]{
+        font-size: 1rem;
+    }
+    #about-us{
+        background-position: 50px 350px;
+    }
+    #about-us>div{
+        width: 90%;
+    }
+    #about-us p{
+        text-align: justify;
+    }
+    #about-us img{
+        width: 400px;
+        height: 400px;
+    }
+    #footer-no-2{
+        margin-top: 52px;
+    }
+}
+@media screen and (max-width: 576px){
+    .homepage-header{
+        background-size: 90vw 90vh;
+        background-position: 0px 230px;
+    }
+    .homepage-header img{
+        height: 240px;
+    }
+    .homepage-header div a{
+        font-size: 0.75rem;
+        padding: 8px 24px;
+    }
+    #header-right h1{
+        font-size: 1.5rem;
+    }
+    #header-right p[name="find-doctor"]{
+        font-size: 0.75rem;
+    }
+    #header-right p[name="recommendation"]{
+        font-size: 0.75rem;
+    }
+    #copyright{
+        font-size: 0.5rem;
+    }
+    #about-us{
+        background-position: -30px 250px;
+    }
+    #about-us p{
+        font-size: 1rem;
+    }
+    #about-us img{
+        width: 300px;
+        height: 300px;
+    }
+    footer i{
+        font-size: 1.5rem;
+    }
+    .contact-p{
+        font-size: 0.9rem;
+    }
+    #footer-no-2 form button{
+        width: 109px;
+        height: 37px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .homepage-header{
+        background-size: 95vw 90vh;
+        background-position: 0px 200px;
+    }
+    .homepage-header img{
+        height: 200px;
+    }
+    #header-right h1{
+        font-size: 1.25rem;
+    }
+    #about-us{
+        background-position: -50px 180px;
+    }
+    #about-us p{
+        font-size: 0.75rem;
+    }
+    #about-us img{
+        width: 240px;
+        height: 240px;
+    }
 }
